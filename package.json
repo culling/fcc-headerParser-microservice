@@ -4,8 +4,9 @@
   "description": "fcc header parser microservice",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "postinstall": "bower install && mkdir uploads",    
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && bower install",
     "devmode": "nodemon ./server.js",
     "c9-install-mongo": "sudo apt-get install -y mongodb-org",
     "c9-config-mongo": "mkdir data && echo 'mongod --bind_ip=$IP --dbpath=data --nojournal --rest \"$@\"' > mongod && chmod a+x mongod",
