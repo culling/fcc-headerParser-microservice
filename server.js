@@ -4,7 +4,7 @@ example output: {"ipaddress":"203.161.96.130","language":"en-GB","software":"Win
 */
 var express = require("express");
 var app     = express();
-process.env.NODE_ENV = process.env.NODE_ENV || 'c9';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var config  = require("./config/config.js");
 
 
